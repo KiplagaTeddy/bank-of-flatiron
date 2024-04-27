@@ -8,14 +8,13 @@ function TransactionForm({ onAddTransaction }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Create a new transaction object
+    // make a new transaction
     const newTransaction = {
       date,
       description,
       category,
       amount: parseFloat(amount),
     };
-    // Call the parent component's function to add the transaction
     onAddTransaction(newTransaction);
     // Reset form fields
     setDate('');
