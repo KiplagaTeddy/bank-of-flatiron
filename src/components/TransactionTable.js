@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 function TransactionTable({ transactions, searchTerm }) {
-  // Check if transactions is undefined or null, and provide a default empty array
+  // look if transactions is undefined
   const transactionList = transactions || [];
 
-  // Filter transactions based on search term
+  // Filter transactions based on search
   const filteredTransactions = transactionList.filter(transaction =>
     transaction && transaction.description &&
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
