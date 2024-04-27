@@ -11,10 +11,10 @@ function App() {
     { date: '2024-04-25', description: 'Shopping', category: 'Retail', amount: 100 },
   ]);
 
-  // State that holds search term
+  // State that holds search
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Function to add a new transaction
+  // Function to add new transaction
   const handleAddTransaction = (newTransaction) => {
     setTransactions([...transactions, newTransaction]);
   };
