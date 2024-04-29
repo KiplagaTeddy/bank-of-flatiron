@@ -22,7 +22,7 @@ function TransactionForm({ onAddTransaction }) {
     setCategory('');
     setAmount('');
   };
-
+//returns  the transaction  form
   return (
     <div className="form-container">
     <form onSubmit={handleSubmit}>
